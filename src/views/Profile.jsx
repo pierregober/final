@@ -31,6 +31,7 @@ export const ProfileComponent = () => {
     setShowCustomCards(
       JSON.parse(localStorage.getItem(user.email + "-custom")),
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [toggle]);
 
   function removeFav(data, key) {
