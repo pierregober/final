@@ -38,7 +38,6 @@ export const ProfileComponent = () => {
   function removeFav(data, key) {
     //remove from favorites by key
     const favArr = JSON.parse(window.localStorage.getItem(user.email + key));
-    console.log(user.email + key, { favArr });
     const filteredFavArr = favArr.filter((obj) => {
       if (key === "-ingredients") {
         if (obj["strDrink"] !== data["strDrink"]) {

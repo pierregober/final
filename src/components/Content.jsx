@@ -43,7 +43,6 @@ function Content() {
       axios
         .request(options)
         .then(function (response) {
-          console.log(response);
           if (response?.data?.drinks === "None Found") {
             alert("NO DRINKS FOUND, but search again please :)");
           } else {
